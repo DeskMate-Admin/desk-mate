@@ -1,95 +1,437 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Base styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #f39c12;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333;
+    --mid-gray: #7f8c8d;
+    --text-color: #2c3e50;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --hover-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
-header, main, footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
 }
 
+/* Top Navigation and Language Selector */
+.top-nav {
+    background-color: var(--secondary-color);
+    padding: 8px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.language-selector {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.language-selector a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    margin: 0 5px;
+}
+
+.language-selector a:hover,
+.language-selector a.active {
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* Header */
 header {
-    background-color: #f5f5f5;
+    background-color: var(--light-gray);
     text-align: center;
     padding: 40px 20px;
     border-bottom: 1px solid #e0e0e0;
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+}
+
 h1 {
     margin: 0;
-    color: #2c3e50;
+    color: var(--secondary-color);
     font-size: 2.5rem;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
 }
 
 header p {
     font-size: 1.2rem;
-    color: #34495e;
+    color: var(--secondary-color);
     margin-top: 10px;
 }
 
+.tagline {
+    margin-top: 1.5rem;
+}
+
+.tagline h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+/* Main Content */
 main {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 40px 20px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
-h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 10px;
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.1rem;
+}
+
+.cta-button {
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Services */
+.services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .service-card {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 4px solid var(--primary-color);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+.service-card .icon {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .service-card h3 {
     margin-top: 0;
-    color: #3498db;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
-footer {
+.service-card ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.service-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Why Choose Us */
+.why-choose {
+    background-color: var(--light-gray);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.why-choose h2 {
     text-align: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #e0e0e0;
-    margin-top: 40px;
-    font-size: 0.9rem;
-    color: #7f8c8d;
+    margin-bottom: 2rem;
 }
 
-footer a {
-    color: #3498db;
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 25px;
+}
+
+.benefit {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.benefit h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+/* Target Market */
+.target-market h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.target-market p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.target-market ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.target-market li {
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    background-color: var(--light-gray);
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.target-market li:before {
+    content: "✓ ";
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--light-gray);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-direct {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact-direct p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-direct a {
+    color: var(--primary-color);
     text-decoration: none;
 }
 
-footer a:hover {
+.contact-direct a:hover {
     text-decoration: underline;
 }
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding-top: 40px;
 }
 
-.logo {
-  max-width: 180px;
-  height: auto;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px 40px;
 }
 
-/* For mobile responsiveness */
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo-img {
+    max-width: 140px;
+    margin-bottom: 1rem;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    opacity: 1;
+}
+
+.footer-contact p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-  .logo {
-    max-width: 120px;
-  }
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo {
+        max-width: 120px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .contact {
+        padding: 20px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 15px;
+    }
+    
+    main {
+        padding: 30px 15px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    .benefits-grid {
+        gap: 15px;
+    }
+    
+    .why-choose {
+        padding: 25px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
 }
