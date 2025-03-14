@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi | Desk-mate.it | Analisi della Supply Chain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/desk-mate-logo.PNG" alt="Desk-mate.it Logo" class="logo">
+        </div>
+        <p>Analisi della Supply Chain per Aziende Italiane</p>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html" class="active">Servizi</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>I NOSTRI SERVIZI</h1>
+            <p>Soluzioni di analisi della supply chain su misura per le piccole e medie imprese del Nord Italia</p>
+        </section>
+
+        <section class="service-tiers">
+            <h2>PACCHETTI DI SERVIZIO</h2>
+            <p>Offriamo tre livelli di servizio per soddisfare le esigenze specifiche della tua azienda:</p>
+            
+            <div class="tier-container">
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3>Pacchetto Analytics Essenziale</h3>
+                        <p class="price">€800-1.200/mese</p>
+                    </div>
+                    <div class="tier-body">
+                        <p>La soluzione ideale per iniziare con l'analisi della supply chain e ottenere visibilità immediata sulle operazioni di importazione O esportazione.</p>
+                        <h4>Include:</h4>
+                        <ul>
+                            <li>Dashboard di performance di Esportazione <strong>O</strong> Importazione</li>
+                            <li>Monitoraggio base della documentazione</li>
+                            <li>Report statici mensili</li>
+                            <li>Implementazione e revisione trimestrale</li>
+                        </ul>
+                        <p class="setup-fee">Costo di setup iniziale: equivalente a 2 mesi di servizio</p>
+                        <div class="tier-cta">
+                            <a href="contatti.html" class="cta-button">Richiedi Informazioni</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tier-card featured">
+                    <div class="tier-header">
+                        <h3>Pacchetto Analytics Avanzato</h3>
+                        <p class="price">€1.500-2.500/mese</p>
+                        <span class="recommended">Più Richiesto</span>
+                    </div>
+                    <div class="tier-body">
+                        <p>Una soluzione completa per le aziende che desiderano ottimizzare sia le operazioni di importazione che di esportazione con aggiornamenti più frequenti.</p>
+                        <h4>Include:</h4>
+                        <ul>
+                            <li>Dashboard complete di Importazione <strong>E</strong> Esportazione</li>
+                            <li>Automazione dell'elaborazione dei documenti</li>
+                            <li>Analisi aggiornate settimanalmente</li>
+                            <li>Revisioni mensili delle informazioni</li>
+                            <li>Funzionalità predittive di base</li>
+                        </ul>
+                        <p class="setup-fee">Costo di setup iniziale: equivalente a 2-3 mesi di servizio</p>
+                        <div class="tier-cta">
+                            <a href="contatti.html" class="cta-button">Richiedi Informazioni</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3>Pacchetto Intelligence Completo</h3>
+                        <p class="price">€3.000-5.000/mese</p>
+                    </div>
+                    <div class="tier-body">
+                        <p>La nostra offerta più completa, con analisi avanzate e supporto continuo per le aziende che vogliono massimizzare l'efficienza della supply chain.</p>
+                        <h4>Include:</h4>
+                        <ul>
+                            <li>Suite completa di dashboard di analisi</li>
+                            <li>Funzionalità avanzate di AI</li>
+                            <li>Sviluppo di metriche personalizzate</li>
+                            <li>Consulenze strategiche bi-settimanali</li>
+                            <li>Integrazione con i sistemi aziendali</li>
+                        </ul>
+                        <p class="setup-fee">Costo di setup iniziale: equivalente a 3 mesi di servizio</p>
+                        <div class="tier-cta">
+                            <a href="contatti.html" class="cta-button">Richiedi Informazioni</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <h2>MODULI DI SERVIZIO PRINCIPALI</h2>
+            
+            <div class="module">
+                <h3>Modulo di Analisi Export</h3>
+                <div class="module-content">
+                    <div class="component-cards">
+                        <div class="component-card">
+                            <h4>Dashboard Performance Export</h4>
+                            <ul>
+                                <li>Penetrazione e crescita per paese</li>
+                                <li>Analisi dei margini di profitto per mercato e prodotto</li>
+                                <li>Visualizzazione dei pattern di ordine dei clienti</li>
+                                <li>Metriche di efficienza della conformità nell'esportazione</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Gestione Documentazione Export</h4>
+                            <ul>
+                                <li>Automazione dell'elaborazione dei documenti</li>
+                                <li>Monitoraggio della conformità e delle scadenze</li>
+                                <li>Verifica della completezza dei documenti</li>
+                                <li>Monitoraggio della riduzione del tasso di errore</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Ottimizzazione Logistica</h4>
+                            <ul>
+                                <li>Analisi e benchmarking dei costi di spedizione</li>
+                                <li>Confronto delle performance dei vettori</li>
+                                <li>Ottimizzazione dei tempi di consegna</li>
+                                <li>Analisi dell'efficienza dell'imballaggio</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Intelligence Mercati Export</h4>
+                            <ul>
+                                <li>Visualizzazione delle opportunità di mercato</li>
+                                <li>Metriche di posizionamento competitivo</li>
+                                <li>Monitoraggio dei cambiamenti normativi</li>
+                                <li>Analisi dell'impatto valutario</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="module">
+                <h3>Modulo di Analisi Import</h3>
+                <div class="module-content">
+                    <div class="component-cards">
+                        <div class="component-card">
+                            <h4>Dashboard Performance Sourcing</h4>
+                            <ul>
+                                <li>Metriche e punteggi delle prestazioni dei fornitori</li>
+                                <li>Analisi del costo totale allo sbarco</li>
+                                <li>Visualizzazione del controllo qualità</li>
+                                <li>Monitoraggio e variabilità dei tempi di consegna</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Gestione Documentazione Import</h4>
+                            <ul>
+                                <li>Elaborazione della documentazione doganale</li>
+                                <li>Monitoraggio della conformità delle importazioni</li>
+                                <li>Calcolatore del costo allo sbarco</li>
+                                <li>Automazione della convalida dei documenti</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Analisi dei Rischi della Supply Chain</h4>
+                            <ul>
+                                <li>Visualizzazione della concentrazione dei fornitori</li>
+                                <li>Valutazione della vulnerabilità alle interruzioni</li>
+                                <li>Modellazione dell'impatto valutario</li>
+                                <li>Mappatura dei rischi regionali</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Ottimizzazione dell'Inventario</h4>
+                            <ul>
+                                <li>Strumenti di pianificazione per lead time lunghi</li>
+                                <li>Ottimizzazione delle scorte di sicurezza</li>
+                                <li>Raccomandazioni sulla tempistica degli ordini</li>
+                                <li>Previsione del rischio di esaurimento scorte</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="module">
+                <h3>Funzionalità Potenziate con AI</h3>
+                <div class="module-content">
+                    <div class="component-cards">
+                        <div class="component-card">
+                            <h4>Automazione Elaborazione Documenti</h4>
+                            <ul>
+                                <li>Estrazione automatica dei dati dai documenti commerciali</li>
+                                <li>Classificazione e instradamento dei documenti</li>
+                                <li>Rilevamento degli errori nella documentazione</li>
+                                <li>Automazione dell'inserimento dati</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Analisi Predittive</h4>
+                            <ul>
+                                <li>Previsione della domanda per mercato e prodotto</li>
+                                <li>Previsione dei tempi di consegna per la pianificazione</li>
+                                <li>Previsione delle tendenze dei prezzi</li>
+                                <li>Previsione del rischio di ritardi</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Rilevamento Anomalie</h4>
+                            <ul>
+                                <li>Identificazione delle variazioni di costo</li>
+                                <li>Segnalazione precoce di problemi di qualità</li>
+                                <li>Avvisi di modelli di ordine inusuali</li>
+                                <li>Anomalie nei tempi di spedizione</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Insight in Linguaggio Naturale</h4>
+                            <ul>
+                                <li>Report di riepilogo automatizzati</li>
+                                <li>Evidenziazione automatica dei risultati chiave</li>
+                                <li>Generazione di raccomandazioni</li>
+                                <li>Narrativa degli avvisi in linguaggio semplice</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="service-process">
+            <h2>IL NOSTRO PROCESSO DI IMPLEMENTAZIONE</h2>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Scoperta e Valutazione</h3>
+                        <ul>
+                            <li>Analisi dello stato attuale</li>
+                            <li>Valutazione della disponibilità dei dati</li>
+                            <li>Definizione degli indicatori chiave di performance</li>
+                            <li>Identificazione di sfide e opportunità</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Progettazione della Soluzione</h3>
+                        <ul>
+                            <li>Progettazione di dashboard e report</li>
+                            <li>Pianificazione dell'integrazione dei dati</li>
+                            <li>Selezione delle funzionalità AI</li>
+                            <li>Sviluppo della roadmap di implementazione</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Implementazione</h3>
+                        <ul>
+                            <li>Connessione e trasformazione dei dati</li>
+                            <li>Sviluppo e test delle dashboard</li>
+                            <li>Configurazione del flusso di lavoro per l'elaborazione dei documenti</li>
+                            <li>Formazione e convalida del modello AI</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Formazione e Consegna</h3>
+                        <ul>
+                            <li>Sessioni di formazione per gli utenti</li>
+                            <li>Sviluppo della documentazione</li>
+                            <li>Trasferimento di conoscenze</li>
+                            <li>Costruzione della capacità di self-service</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Supporto Continuo</h3>
+                        <ul>
+                            <li>Riunioni di revisione regolari</li>
+                            <li>Perfezionamento delle dashboard</li>
+                            <li>Implementazione di nuove funzionalità</li>
+                            <li>Miglioramento continuo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <h2>PRONTI A INIZIARE?</h2>
+            <p>Contattaci oggi per una valutazione gratuita della tua supply chain e scopri come i nostri servizi possono aiutare la tua azienda a ottimizzare le operazioni commerciali internazionali.</p>
+            <div class="cta-buttons">
+                <a href="contatti.html" class="cta-button">Richiedi Valutazione Gratuita</a>
+                <a href="chi-siamo.html" class="secondary-button">Scopri di Più</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Desk-mate.it</h3>
+                <p>Analisi della Supply Chain per Aziende Italiane</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contatti</h3>
+                <p>📧 info@desk-mate.it</p>
+                <p>📞 +39 0XX XXX XXXX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Collegamenti Rapidi</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Desk-mate.it | Analisi della Supply Chain Globale</p>
+        </div>
+    </footer>
+</body>
+</html>
