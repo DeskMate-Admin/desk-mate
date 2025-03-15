@@ -359,6 +359,66 @@
             <p>&copy; 2025 Desk-mate.it | Analisi della Supply Chain Globale</p>
         </div>
     </footer>
-    <script src="js/cookie-consent.js"></script>
+   <!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <div class="cookie-text">
+            <h3>Utilizziamo i cookie</h3>
+            <p>Questo sito utilizza cookie tecnici necessari al funzionamento e cookie analitici e funzionali per migliorare la tua esperienza. Puoi accettare tutti i cookie, solo quelli necessari o personalizzare le tue preferenze.</p>
+            <p>Per maggiori informazioni, consulta la nostra <a href="cookie.html">Cookie Policy</a>.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button id="accept-all-cookies" class="cookie-btn cookie-btn-accept-all">Accetta tutti</button>
+            <button id="accept-necessary-cookies" class="cookie-btn cookie-btn-accept-necessary">Solo necessari</button>
+            <button id="open-modal-settings" class="cookie-btn cookie-btn-settings">Personalizza</button>
+        </div>
+    </div>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div id="cookie-modal" class="cookie-modal">
+    <div class="cookie-modal-content">
+        <button id="close-cookie-modal" class="cookie-modal-close">&times;</button>
+        <h2>Impostazioni Cookie</h2>
+        <p>Personalizza le tue preferenze sui cookie. I cookie necessari non possono essere disabilitati in quanto essenziali per il funzionamento del sito.</p>
+        
+        <div class="cookie-setting">
+            <div class="cookie-setting-header">
+                <span class="cookie-setting-title">Cookie Necessari</span>
+                <label class="cookie-toggle">
+                    <input type="checkbox" id="necessary-cookies" checked disabled>
+                    <span class="cookie-slider"></span>
+                </label>
+            </div>
+            <p class="cookie-setting-description">Questi cookie sono essenziali per il funzionamento del sito web e non possono essere disattivati.</p>
+        </div>
+        
+        <div class="cookie-setting">
+            <div class="cookie-setting-header">
+                <span class="cookie-setting-title">Cookie Analitici</span>
+                <label class="cookie-toggle">
+                    <input type="checkbox" id="analytics-cookies">
+                    <span class="cookie-slider"></span>
+                </label>
+            </div>
+            <p class="cookie-setting-description">Questi cookie ci permettono di contare le visite e le fonti di traffico per poter misurare e migliorare le prestazioni del nostro sito.</p>
+        </div>
+        
+        <div class="cookie-setting">
+            <div class="cookie-setting-header">
+                <span class="cookie-setting-title">Cookie Funzionali</span>
+                <label class="cookie-toggle">
+                    <input type="checkbox" id="functional-cookies">
+                    <span class="cookie-slider"></span>
+                </label>
+            </div>
+            <p class="cookie-setting-description">Questi cookie consentono al sito di fornire funzionalità e personalizzazione avanzate.</p>
+        </div>
+        
+        <div class="cookie-modal-buttons">
+            <button id="save-cookie-settings" class="cookie-btn cookie-btn-accept-all">Salva preferenze</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
