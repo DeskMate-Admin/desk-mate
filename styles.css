@@ -90,22 +90,23 @@ header {
 }
 
 /* Navigation - standardized */
+/* Standardized navigation styles */
 .nav-menu {
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Increased from 1.5rem for more spacing */
+    gap: 2rem; /* Consistent spacing between items */
     list-style: none;
-    margin: 1.5rem 0; /* Standardized margin */
+    margin: 1.5rem 0; /* Consistent top/bottom margin */
     padding: 0.5rem 0;
 }
 
 .nav-menu a {
     position: relative;
-    padding: 0.75rem 1rem; /* Added horizontal padding */
-    font-weight: 600; /* Made slightly bolder */
+    padding: 0.75rem 1rem; /* Consistent padding */
+    font-weight: 600; /* Consistent font weight */
     transition: color 0.2s;
     color: var(--primary);
-    font-size: 1rem; /* Standardized font size */
+    font-size: 1rem; /* Consistent font size */
 }
 
 .nav-menu a:after {
@@ -125,6 +126,23 @@ header {
 
 .nav-menu a:hover {
     text-decoration: none;
+}
+
+/* Active state - ensure consistent styling */
+.nav-menu a.active {
+    font-weight: 600; /* Same as non-active to prevent width changes */
+    color: var(--primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .nav-menu a {
+        padding: 0.5rem 0.75rem;
+    }
 }
 
 /* Main content */
@@ -1087,5 +1105,122 @@ input:disabled + .cookie-slider {
     .cookie-modal-content {
         padding: 1.5rem;
         width: 95%;
+    }
+}
+/* Assessment section styles */
+.assessment-section {
+    margin-bottom: 3rem;
+}
+
+.assessment-content {
+    margin-bottom: 2.5rem;
+}
+
+.assessment-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.assessment-feature {
+    flex: 1 1 300px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.assessment-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.assessment-feature h3 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.guarantee-box {
+    background-color: #f1f7ff;
+    border-left: 4px solid var(--primary);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.guarantee-box h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* Contact section styles */
+.contact-section {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.contact-detail {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.contact-detail h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.contact-detail a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-detail a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.cta-prompt {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.cta-prompt p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .assessment-feature {
+        flex-basis: 100%;
+    }
+    
+    .contact-details {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .contact-detail {
+        flex-basis: 100%;
     }
 }
