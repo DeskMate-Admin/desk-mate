@@ -71,61 +71,66 @@
                     </div>
                 </div>
                 
-                <div class="contact-form-container">
-                    <h2>MANDACI UN MESSAGGIO</h2>
-                    
-                    <form class="contact-form" action="#" method="POST" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nome e Cognome*</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">Azienda*</label>
-                            <input type="text" id="company" name="company" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email*</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Telefono</label>
-                            <input type="tel" id="phone" name="phone" class="form-control">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Servizio di Interesse*</label>
-                            <select id="service" name="service" class="form-control" required>
-                                <option value="">Seleziona un servizio</option>
-                                <option value="export">Analisi Export</option>
-                                <option value="import">Analisi Import</option>
-                                <option value="complete">Soluzione Completa</option>
-                                <option value="assessment">Valutazione Gratuita</option>
-                                <option value="info">Informazioni Generali</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Messaggio*</label>
-                            <textarea id="message" name="message" class="form-control" required></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="checkbox-container">
-                                <input type="checkbox" name="privacy" required>
-                                <span class="checkmark"></span>
-                                Ho letto e accetto l'informativa sulla privacy*
-                            </label>
-                        </div>
-                        
-                        <div class="form-group">
-                            <button type="submit" class="submit-button">Invia Messaggio</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+               <div class="contact-form-container">
+    <h2>MANDACI UN MESSAGGIO</h2>
+    
+    <form class="contact-form" action="https://formsubmit.co/admin@desk-mate.it" method="POST" id="contactForm">
+        <!-- FormSubmit configuration -->
+        <input type="hidden" name="_subject" value="Nuova richiesta da Desk-mate.it">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://desk-mate.it/grazie.html">
+        <input type="hidden" name="_template" value="table">
+        
+        <div class="form-group">
+            <label for="name">Nome e Cognome*</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="company">Azienda*</label>
+            <input type="text" id="company" name="company" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Telefono</label>
+            <input type="tel" id="phone" name="phone" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label for="service">Servizio di Interesse*</label>
+            <select id="service" name="service" class="form-control" required>
+                <option value="">Seleziona un servizio</option>
+                <option value="export">Analisi Export</option>
+                <option value="import">Analisi Import</option>
+                <option value="complete">Soluzione Completa</option>
+                <option value="assessment">Valutazione Gratuita</option>
+                <option value="info">Informazioni Generali</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Messaggio*</label>
+            <textarea id="message" name="message" class="form-control" required></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label class="checkbox-container">
+                <input type="checkbox" name="privacy" required>
+                <span class="checkmark"></span>
+                Ho letto e accetto l'informativa sulla privacy*
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" class="submit-button">Invia Messaggio</button>
+        </div>
+    </form>
+</div>
         </section>
         
         <section class="request-assessment">
