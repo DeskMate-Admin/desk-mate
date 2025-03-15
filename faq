@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Desk-mate.it | Analisi della Supply Chain</title>
+    <meta name="description" content="Risposte alle domande più frequenti sui servizi di analisi della supply chain offerti da Desk-mate.it per le aziende italiane.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#191f61">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/desk-mate-logo.PNG" alt="Desk-mate.it Logo" class="logo">
+        </div>
+        <p>Analisi della Supply Chain per Aziende Italiane</p>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>DOMANDE FREQUENTI</h1>
+            <p>Risposte alle domande più comuni sui nostri servizi di analisi della supply chain</p>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Di quali dati avete bisogno per implementare le vostre soluzioni?
+                    </div>
+                    <div class="faq-answer">
+                        <p>I nostri dashboard sono generalmente alimentati da dati che le aziende già possiedono ma non sfruttano appieno. Tipicamente utilizziamo:</p>
+                        <ul>
+                            <li>Dati di vendita e ordini dei clienti (per analisi export)</li>
+                            <li>Dati di acquisto e ordini ai fornitori (per analisi import)</li>
+                            <li>Informazioni di spedizione e documentazione doganale</li>
+                            <li>Dati sui costi di trasporto e sdoganamento</li>
+                        </ul>
+                        <p>Durante la fase di valutazione, effettuiamo un inventario dei dati disponibili e identifichiamo eventuali lacune che potrebbero essere colmate.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quanto tempo richiede l'implementazione dei vostri servizi?
+                    </div>
+                    <div class="faq-answer">
+                        <p>I tempi di implementazione variano in base al pacchetto scelto e alla complessità dei dati, ma generalmente seguiamo queste tempistiche:</p>
+                        <ul>
+                            <li><strong>Pacchetto Essenziale:</strong> 2-3 settimane dalla raccolta dei dati</li>
+                            <li><strong>Pacchetto Avanzato:</strong> 3-5 settimane</li>
+                            <li><strong>Pacchetto Completo:</strong> 5-8 settimane</li>
+                        </ul>
+                        <p>Il nostro approccio è modulare, quindi iniziamo a fornire valore con le prime dashboard mentre continuiamo a sviluppare funzionalità più avanzate.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        È necessario avere competenze tecniche per utilizzare le vostre dashboard?
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, le nostre dashboard sono progettate per essere intuitive e utilizzabili da manager e operatori senza competenze tecniche specifiche. Ogni implementazione include:</p>
+                        <ul>
+                            <li>Sessioni di formazione per tutti gli utenti</li>
+                            <li>Documentazione personalizzata con guide passo-passo</li>
+                            <li>Interfacce intuitive con visualizzazioni chiare</li>
+                            <li>Supporto continuo per domande e chiarimenti</li>
+                        </ul>
+                        <p>Il nostro obiettivo è rendere i dati accessibili e utilizzabili per guidare decisioni migliori, non complicare i processi con strumenti troppo complessi.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quali sono i benefici tipici che le aziende ottengono utilizzando i vostri servizi?
+                    </div>
+                    <div class="faq-answer">
+                        <p>I clienti che utilizzano i nostri servizi tipicamente osservano:</p>
+                        <ul>
+                            <li>Riduzione dei costi logistici del 8-15%</li>
+                            <li>Diminuzione degli errori nella documentazione fino al 90%</li>
+                            <li>Riduzione dei tempi di ciclo per le pratiche import/export del 30-40%</li>
+                            <li>Miglioramento nelle valutazioni delle performance dei fornitori</li>
+                            <li>Maggiore visibilità sulle opportunità di crescita nei mercati esteri</li>
+                            <li>Presa di decisioni più rapida grazie a informazioni tempestive</li>
+                        </ul>
+                        <p>Durante la valutazione gratuita, possiamo stimare i potenziali benefici specifici per la tua azienda.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Come si integrano le vostre soluzioni con i nostri sistemi esistenti?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le nostre soluzioni sono progettate per integrarsi con i sistemi esistenti senza sostituirli. Utilizziamo diversi approcci:</p>
+                        <ul>
+                            <li>Connessioni dirette ai database aziendali quando possibile</li>
+                            <li>Import automatizzati da file Excel o CSV esportati dai sistemi esistenti</li>
+                            <li>Semplici template di raccolta dati per informazioni non strutturate</li>
+                            <li>Per il pacchetto Completo, sviluppiamo connettori personalizzati se necessario</li>
+                        </ul>
+                        <p>La nostra architettura basata su Microsoft Power BI e Power Automate offre flessibilità nell'integrazione con la maggior parte dei sistemi gestionali, ERP e CRM.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        È necessario un impegno a lungo termine per utilizzare i vostri servizi?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Offriamo termini contrattuali flessibili per adattarci alle esigenze di ogni cliente:</p>
+                        <ul>
+                            <li>Contratti standard con durata minima di 6 mesi</li>
+                            <li>Opzioni di rinnovo mensile dopo il periodo iniziale</li>
+                            <li>Possibilità di scalare il servizio (upgrade o downgrade) con preavviso di 30 giorni</li>
+                        </ul>
+                        <p>Crediamo che i nostri clienti debbano rimanere con noi perché continuano a vedere valore, non per vincoli contrattuali. La nostra elevata percentuale di rinnovi (oltre il 90%) testimonia la soddisfazione dei nostri clienti.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Come gestite la sicurezza e la riservatezza dei dati?
+                    </div>
+                    <div class="faq-answer">
+                        <p>La sicurezza e la riservatezza dei dati sono per noi priorità assolute:</p>
+                        <ul>
+                            <li>Utilizziamo l'infrastruttura Microsoft Azure con certificazione ISO 27001</li>
+                            <li>I dati vengono crittografati sia in transito che a riposo</li>
+                            <li>Implementiamo rigorosi controlli di accesso basati sui ruoli</li>
+                            <li>Firmiamo accordi di riservatezza (NDA) con tutti i clienti</li>
+                            <li>Rispettiamo pienamente il GDPR e altre normative sulla privacy</li>
+                            <li>Offriamo opzioni di residenza dei dati all'interno dell'UE</li>
+                        </ul>
+                        <p>Siamo trasparenti riguardo alle nostre pratiche di sicurezza e siamo disponibili a discutere requisiti specifici con il tuo team IT.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Possiamo personalizzare le dashboard secondo le nostre esigenze specifiche?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Assolutamente sì. Mentre offriamo template standardizzati per accelerare l'implementazione, tutte le nostre soluzioni vengono personalizzate:</p>
+                        <ul>
+                            <li>Adattiamo i KPI e le metriche alle priorità della tua azienda</li>
+                            <li>Personalizziamo le visualizzazioni in base alle preferenze degli utenti</li>
+                            <li>Integriamo terminologia e classificazioni specifiche del settore</li>
+                            <li>Aggiungiamo visualizzazioni e report su misura quando necessario</li>
+                        </ul>
+                        <p>La personalizzazione è particolarmente approfondita nei pacchetti Avanzato e Completo, dove sviluppiamo componenti specifici per le esigenze uniche della tua azienda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <h2>HAI ALTRE DOMANDE?</h2>
+            <p>Non hai trovato la risposta che cercavi? Siamo a tua disposizione per fornirti tutte le informazioni di cui hai bisogno sui nostri servizi di analisi della supply chain.</p>
+            <div class="cta-buttons">
+                <a href="contatti.html" class="cta-button">Contattaci</a>
+                <a href="servizi.html" class="secondary-button">Esplora i Servizi</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Desk-mate.it</h3>
+                <p>Analisi della Supply Chain per Aziende Italiane</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contatti</h3>
+                <p>📧 info@desk-mate.it</p>
+                <p>📞 +39 0XX XXX XXXX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Collegamenti Rapidi</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Desk-mate.it | Analisi della Supply Chain Globale</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all FAQ question elements
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            // Add click event listener to each question
+            faqQuestions.forEach(function(question) {
+                question.addEventListener('click', function() {
+                    // Toggle active class for the question
+                    this.classList.toggle('active');
+                    
+                    // Get the next element (the answer)
+                    const answer = this.nextElementSibling;
+                    
+                    // Toggle show class for the answer
+                    answer.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
