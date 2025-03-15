@@ -74,6 +74,31 @@ section {
 img {
     max-width: 100%;
 }
+/* Updated logo styling */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem auto 1rem;
+}
+
+.logo {
+    width: 300px; /* Increase from current size */
+    height: auto;
+}
+
+/* Reduce main heading size */
+.hero h1 {
+    font-size: 1.8rem;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.3;
+}
+
+/* Add some breathing room */
+.hero {
+    padding: 3rem 2rem;
+}
 
 /* Layout Components */
 .container {
