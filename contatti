@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Desk-mate.it | Analisi della Supply Chain</title>
+    <meta name="description" content="Contatta Desk-mate.it per una valutazione gratuita della tua supply chain o per ricevere maggiori informazioni sui nostri servizi di analisi.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#191f61">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/desk-mate-logo.PNG" alt="Desk-mate.it Logo" class="logo">
+        </div>
+        <p>Analisi della Supply Chain per Aziende Italiane</p>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="contatti.html" class="active">Contatti</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>CONTATTACI</h1>
+            <p>Richiedi maggiori informazioni o una valutazione gratuita della tua supply chain</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>INFORMAZIONI DI CONTATTO</h2>
+                    
+                    <div class="contact-detail">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@desk-mate.it</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h3>Telefono</h3>
+                            <p>+39 0XX XXX XXXX</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <span class="contact-icon">🕙</span>
+                        <div>
+                            <h3>Orari</h3>
+                            <p>Lunedì - Venerdì: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <span class="contact-icon">🔒</span>
+                        <div>
+                            <h3>Privacy</h3>
+                            <p>I tuoi dati saranno trattati nel rispetto della normativa sulla privacy GDPR.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>MANDACI UN MESSAGGIO</h2>
+                    
+                    <form class="contact-form" action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome e Cognome*</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Azienda*</label>
+                            <input type="text" id="company" name="company" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefono</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Servizio di Interesse*</label>
+                            <select id="service" name="service" class="form-control" required>
+                                <option value="">Seleziona un servizio</option>
+                                <option value="export">Analisi Export</option>
+                                <option value="import">Analisi Import</option>
+                                <option value="complete">Soluzione Completa</option>
+                                <option value="assessment">Valutazione Gratuita</option>
+                                <option value="info">Informazioni Generali</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Messaggio*</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Ho letto e accetto l'informativa sulla privacy*
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="submit-button">Invia Messaggio</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="request-assessment">
+            <h2>RICHIEDI UNA VALUTAZIONE GRATUITA</h2>
+            <p>La nostra valutazione gratuita della supply chain ti aiuterà a identificare opportunità di miglioramento nelle tue operazioni di import/export e a quantificare i potenziali benefici.</p>
+            
+            <div class="assessment-benefits">
+                <div class="benefit">
+                    <h3>Cosa Include la Valutazione?</h3>
+                    <ul>
+                        <li>Revisione dei processi di importazione ed esportazione</li>
+                        <li>Analisi preliminare dei dati disponibili</li>
+                        <li>Identificazione delle opportunità di ottimizzazione</li>
+                        <li>Stima dei potenziali risparmi e benefici</li>
+                        <li>Presentazione personalizzata dei risultati</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit">
+                    <h3>Come Funziona?</h3>
+                    <ol>
+                        <li>Compila il modulo di contatto selezionando "Valutazione Gratuita"</li>
+                        <li>Organizziamo una breve chiamata introduttiva (30 minuti)</li>
+                        <li>Concordiamo il perimetro della valutazione</li>
+                        <li>Conduciamo l'analisi (circa 1 settimana)</li>
+                        <li>Presentiamo i risultati e le raccomandazioni</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Desk-mate.it</h3>
+                <p>Analisi della Supply Chain per Aziende Italiane</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contatti</h3>
+                <p>📧 info@desk-mate.it</p>
+                <p>📞 +39 0XX XXX XXXX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Collegamenti Rapidi</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Desk-mate.it | Analisi della Supply Chain Globale</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form validation and submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Basic form validation
+            const name = document.getElementById('name').value;
+            const company = document.getElementById('company').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && company && email && message) {
+                // In a real implementation, you would send the form data to your server
+                alert('Grazie per il tuo messaggio! Ti risponderemo il prima possibile.');
+                this.reset();
+            } else {
+                alert('Per favore, compila tutti i campi obbligatori.');
+            }
+        });
+    </script>
+</body>
+</html>
