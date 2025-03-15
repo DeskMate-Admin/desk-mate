@@ -1,568 +1,69 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
+/* Aggiunte per la pagina Chi Siamo */
 
-header, main, footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #f5f5f5;
-    text-align: center;
-    padding: 30px 20px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-h1 {
-    margin: 0;
-    color: #191f61;
-    font-size: 2.2rem;
-    text-align: center;
-}
-
-h2 {
-    color: #191f61;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 10px;
-}
-
-h3 {
-    color: #191f61;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #191f61;
-    margin-top: 10px;
-}
-
-/* Navigation */
-.nav-menu {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-}
-
-.nav-menu li {
-    margin: 0 15px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.nav-menu a:hover {
-    background-color: #f0f0f0;
-    color: #191f61;
-}
-
-.nav-menu a.active {
-    background-color: #191f61;
-    color: white;
-}
-
-main {
-    padding: 40px 20px;
-}
-
-section {
-    margin-bottom: 60px;
-}
-
-.page-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.page-header p {
-    max-width: 800px;
-    margin: 20px auto;
-    font-size: 1.1rem;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.hero p {
-    max-width: 800px;
-    margin: 20px auto;
-    font-size: 1.1rem;
-}
-
-/* CTA Buttons */
-.cta-button {
-    background-color: #191f61;
-    color: white !important;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: background-color 0.3s;
-    display: inline-block;
-}
-
-.cta-button:hover {
-    background-color: #0e1235;
-}
-
-.secondary-button {
-    background-color: transparent;
-    color: #191f61 !important;
-    padding: 10px 22px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border: 2px solid #191f61;
-    transition: all 0.3s;
-    display: inline-block;
-    margin-left: 15px;
-}
-
-.secondary-button:hover {
-    background-color: #191f61;
-    color: white !important;
-}
-
-/* Service Tiers */
-.tier-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.tier-card {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.tier-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-}
-
-.tier-card.featured {
-    border: 2px solid #191f61;
-    transform: scale(1.02);
-    position: relative;
-}
-
-.tier-card.featured:hover {
-    transform: scale(1.02) translateY(-5px);
-}
-
-.recommended {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #191f61;
-    color: white;
-    font-size: 0.8rem;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-.tier-header {
-    background-color: #f5f5f5;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid #e0e0e0;
-    position: relative;
-}
-
-.tier-header h3 {
-    margin: 0;
-    font-size: 1.3rem;
-}
-
-.price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #191f61;
-    margin: 10px 0 0 0;
-}
-
-.tier-body {
-    padding: 25px;
-}
-
-.tier-body h4 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.tier-body ul {
-    padding-left: 20px;
-    margin-bottom: 25px;
-}
-
-.tier-body li {
-    margin-bottom: 8px;
-}
-
-.setup-fee {
-    font-size: 0.9rem;
-    color: #666;
-    font-style: italic;
-    margin: 20px 0;
-}
-
-.tier-cta {
-    text-align: center;
-    margin-top: 30px;
-}
-
-/* Service Modules */
-.module {
+.about-section {
     margin-bottom: 50px;
 }
 
-.module h3 {
-    background-color: #191f61;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 5px;
-    margin-bottom: 25px;
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
-.component-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-.component-card {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.component-card h4 {
-    color: #191f61;
-    margin-top: 0;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 10px;
-}
-
-.component-card ul {
-    padding-left: 20px;
-    margin-bottom: 0;
-}
-
-.component-card li {
-    margin-bottom: 8px;
-}
-
-/* Implementation Process */
-.process-steps {
-    margin-top: 40px;
-}
-
-.process-step {
-    display: flex;
-    margin-bottom: 30px;
-    align-items: flex-start;
-}
-
-.step-number {
-    background-color: #191f61;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-    flex-shrink: 0;
-    margin-right: 20px;
-    margin-top: 5px;
-}
-
-.step-content {
-    flex-grow: 1;
-}
-
-.step-content h3 {
-    margin-top: 0;
-    color: #191f61;
-}
-
-.step-content ul {
-    padding-left: 20px;
-}
-
-/* CTA Section */
-.cta-section {
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    padding: 40px;
-    text-align: center;
-    margin-top: 60px;
-}
-
-.cta-section h2 {
-    border-bottom: none;
-}
-
-.cta-section p {
-    max-width: 800px;
-    margin: 20px auto 30px;
-    font-size: 1.1rem;
-}
-
-.cta-buttons {
-    margin-top: 30px;
-}
-
-/* Service Card */
-.service-card {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 25px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.service-card h3 {
-    margin-top: 0;
-    color: #191f61;
-}
-
-.service-card ul {
-    padding-left: 20px;
-}
-
-/* Benefits Section */
-.benefits-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.benefit {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.benefit h3 {
-    font-size: 1.2rem;
-    margin-top: 0;
-}
-
-/* Target Section */
-.target ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.target li {
-    padding: 10px 0;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.target li:last-child {
-    border-bottom: none;
-}
-
-/* Contact Form */
-.contact-form {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-top: 30px;
-}
-
-.form-group {
+.about-content p {
     margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button[type="submit"] {
-    background-color: #191f61;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-button[type="submit"]:hover {
-    background-color: #0e1235;
-}
-
-.direct-contact {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.cta-text {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-}
-
-/* Footer */
-footer {
-    background-color: #f5f5f5;
-    border-top: 1px solid #e0e0e0;
-    margin-top: 60px;
-    font-size: 0.9rem;
-    color: #7f8c8d;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-section h3 {
-    font-size: 1.1rem;
-    margin-top: 0;
-}
-
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section li {
-    margin-bottom: 8px;
-}
-
-.footer-section a {
-    color: #191f61;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 15px 0;
-    border-top: 1px solid #e0e0e0;
-}
-
-.footer-bottom p {
-    margin: 0;
-}
-
-.logo-container {
+.founder-content {
     display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
 }
 
-.logo {
-    max-width: 300px;
+.founder-photo {
+    flex: 0 0 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.founder-photo img {
+    width: 100%;
     height: auto;
+    display: block;
 }
 
-/* For mobile responsiveness */
+.founder-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.partnerships-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.partnerships-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.partnerships-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #191f61;
+}
+
+/* Responsività per dispositivi mobili */
 @media (max-width: 768px) {
-    .logo {
-        max-width: 200px;
-    }
-    
-    h1 {
-        font-size: 1.8rem;
-    }
-    
-    .tier-container, 
-    .benefits-container,
-    .component-cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .tier-card.featured {
-        transform: scale(1);
-    }
-    
-    .tier-card.featured:hover {
-        transform: translateY(-5px);
-    }
-    
-    .component-card, 
-    .benefit {
-        padding: 15px;
-    }
-    
-    .nav-menu {
+    .founder-content {
         flex-direction: column;
     }
     
-    .nav-menu li {
-        margin: 5px 0;
-    }
-    
-    .contact-form {
-        padding: 20px;
-    }
-    
-    .process-step {
-        flex-direction: column;
-    }
-    
-    .step-number {
-        margin-bottom: 10px;
-    }
-    
-    .cta-buttons .secondary-button {
-        margin-left: 0;
-        margin-top: 15px;
+    .founder-photo {
+        margin: 0 auto 20px auto;
     }
 }
