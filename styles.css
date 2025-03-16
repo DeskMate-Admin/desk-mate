@@ -1224,3 +1224,104 @@ input:disabled + .cookie-slider {
         flex-basis: 100%;
     }
 }
+/* Stili aggiuntivi per la pagina contatti revisionata */
+
+/* Sezione Metodi di Contatto */
+.contact-method-section {
+    margin-bottom: 3rem;
+}
+
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.contact-method-card {
+    flex: 1 1 400px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 1.75rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-method-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.contact-method-card p {
+    margin-bottom: 0.75rem;
+}
+
+.contact-method-card ul {
+    margin-bottom: 1.5rem;
+}
+
+.contact-method-card .cta-button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* FAQ mini section */
+.faq-mini-section {
+    margin-bottom: 3rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+
+.faq-mini-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.faq-link {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.faq-link a {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* Process section adjustments */
+.initial-process-section {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.process-steps {
+    margin-top: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-methods {
+        flex-direction: column;
+    }
+    
+    .contact-method-card {
+        flex-basis: 100%;
+    }
+    
+    .contact-method-card .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
