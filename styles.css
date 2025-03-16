@@ -1325,3 +1325,54 @@ input:disabled + .cookie-slider {
         text-align: center;
     }
 }
+/* Stili per l'header fisso */
+header {
+    background-color: var(--white);
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    margin: 0;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Adattamento navigazione */
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+    }
+    
+    .logo-container {
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .nav-menu {
+        justify-content: center;
+    }
+}
