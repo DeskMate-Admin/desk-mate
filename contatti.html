@@ -57,29 +57,7 @@
             font-size: 1.1rem;
         }
 
-        /* FAQ mini section */
-        .faq-mini-section {
-            margin-bottom: 3rem;
-            background-color: var(--white);
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            padding: 2rem;
-        }
 
-        .faq-mini-container {
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .faq-link {
-            text-align: center;
-            margin-top: 1.5rem;
-        }
-
-        .faq-link a {
-            font-weight: 600;
-            color: var(--primary);
-        }
 
         /* Process section adjustments */
         .initial-process-section {
@@ -136,13 +114,7 @@
             <h2>PARLIAMO DELLA TUA SUPPLY CHAIN</h2>
             
             <div class="contact-main">
-                <p class="contact-intro">Siamo qui per aiutarti a ottimizzare le operazioni della tua supply chain. Contattaci per:</p>
-                
-                <ul class="contact-options">
-                    <li><strong>Una chiamata conoscitiva</strong> - Discutiamo in 30 minuti le sfide specifiche della tua azienda e come possiamo aiutarti</li>
-                    <li><strong>Informazioni sui servizi</strong> - Ricevi dettagli sui nostri pacchetti e soluzioni personalizzate</li>
-                    <li><strong>Un preventivo personalizzato</strong> - Basato sulle esigenze specifiche della tua azienda</li>
-                </ul>
+                <p class="contact-intro">Siamo qui per aiutarti a ottimizzare le operazioni della tua supply chain con una chiamata conoscitiva per discutere le sfide specifiche della tua azienda, fornirti informazioni sui nostri servizi o preparare un preventivo personalizzato.</p>
                 
                 <div class="contact-cta">
                     <a href="mailto:admin@desk-mate.it" class="cta-button">Contattaci ora</a>
@@ -219,42 +191,7 @@
             </div>
         </section>
         
-        <section class="faq-mini-section">
-            <h2>DOMANDE FREQUENTI</h2>
-            
-            <div class="faq-mini-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Quali sono i costi dei vostri servizi?
-                    </div>
-                    <div class="faq-answer">
-                        <p>I costi variano in base alle specifiche esigenze e dimensioni dell'azienda. I nostri pacchetti mensili partono da €700/mese, mentre i servizi una tantum hanno tariffe personalizzate. Contattaci per ricevere una proposta dettagliata per la tua azienda.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Quanto tempo richiede in media un'implementazione?
-                    </div>
-                    <div class="faq-answer">
-                        <p>Le tempistiche variano in base alla complessità del progetto. Generalmente, l'implementazione di un dashboard base richiede 2-3 settimane, mentre progetti più articolati possono richiedere 5-8 settimane. Dettagliamo le tempistiche specifiche nella proposta personalizzata.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Come misurate il successo dei vostri interventi?
-                    </div>
-                    <div class="faq-answer">
-                        <p>Definiamo insieme KPI specifici per ogni progetto (es. riduzione costi logistici, miglioramento tempi di consegna, ottimizzazione scorte). Monitoriamo questi indicatori nel tempo per quantificare in modo oggettivo il valore generato dai nostri interventi.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="faq-link">
-                <p>Per ulteriori domande, consulta la nostra <a href="faq.html">pagina FAQ completa</a>.</p>
-            </div>
-        </section>
+
     </main>
 
     <footer>
@@ -350,19 +287,6 @@
     </div>
     <script src="js/cookie-consent.js"></script>
     
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Toggle FAQ answers
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            
-            faqQuestions.forEach(function(question) {
-                question.addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    const answer = this.nextElementSibling;
-                    answer.classList.toggle('show');
-                });
-            });
-        });
-    </script>
+
 </body>
 </html>
