@@ -10,6 +10,59 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <meta name="theme-color" content="#191f61">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stili per l'header fisso */
+        header {
+            background-color: var(--white);
+            padding: 0.75rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: flex-start;
+            width: auto;
+            margin: 0;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+
+        /* Adattamento navigazione */
+        .nav-menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 0.5rem 1rem;
+            }
+            
+            .logo-container {
+                justify-content: center;
+                margin-bottom: 0.5rem;
+            }
+            
+            .nav-menu {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,8 +85,8 @@
             <p>Strumenti analitici accessibili per PMI con operazioni commerciali internazionali</p>
             <p>Desk-Mate vi aiuta a organizzare e visualizzare i dati della vostra supply chain esistenti per identificare opportunità di miglioramento concrete nei processi di import ed export. Offriamo soluzioni semplici ma efficaci, progettate per chi ha bisogno di chiarezza senza complessità.</p>
             <div class="cta-buttons">
-                <a href="contatti.html" class="cta-button">Contattateci</a>
-                <a href="servizi.html" class="secondary-button">Scoprite i Nostri Servizi</a>
+                <a href="contatti.html" class="cta-button">Contattaci</a>
+                <a href="servizi.html" class="secondary-button">Scopri i Nostri Servizi</a>
             </div>
         </section>
         
@@ -54,18 +107,18 @@
             <p>Offriamo assistenza concreta per migliorare la gestione delle vostre operazioni commerciali:</p>
             <div class="service-card">
                 <h3>Dashboard di monitoraggio</h3>
-                <p>Visualizzate i dati import/export in modo chiaro per prendere decisioni basate su informazioni concrete</p>
+                <p>Visualizza i dati import/export in modo chiaro per prendere decisioni basate su informazioni concrete</p>
             </div>
             <div class="service-card">
-                <h3>Ottimizzazione dei processi documentali</h3>
-                <p>Riducete errori e tempi nella gestione della documentazione commerciale internazionale</p>
+                <h3>Analisi e ottimizzazione dei processi</h3>
+                <p>Identifica e risolvi inefficienze nei flussi operativi della tua supply chain internazionale</p>
             </div>
             <div class="service-card">
                 <h3>Supporto personalizzato</h3>
-                <p>Configuriamo strumenti adatti alle vostre esigenze specifiche con formazione dedicata</p>
+                <p>Ottieni strumenti adatti alle tue esigenze specifiche con formazione dedicata</p>
             </div>
             <div class="cta-buttons" style="margin-top: 2rem; justify-content: center;">
-                <a href="servizi.html" class="secondary-button">Scoprite i dettagli dei servizi</a>
+                <a href="servizi.html" class="secondary-button">Scopri i dettagli dei servizi</a>
             </div>
         </section>
         
@@ -91,32 +144,6 @@
             </div>
         </section>
         
-        <section class="service-tiers" style="margin-bottom: 3rem;">
-            <h2>INIZIATE CON UN PACCHETTO BASE</h2>
-            <div class="tier-container" style="justify-content: center;">
-                <div class="tier-card">
-                    <div class="tier-header">
-                        <h3>Dashboard di Monitoraggio</h3>
-                    </div>
-                    <div class="tier-body">
-                        <ul>
-                            <li>Configurazione personalizzata su Microsoft Power BI</li>
-                            <li>Supporto all'aggiornamento periodico dei dati</li>
-                            <li>Guida all'interpretazione dei risultati</li>
-                            <li>Consulenza remota per ottimizzare l'utilizzo</li>
-                        </ul>
-                        <p style="text-align: center; font-weight: 600; margin-top: 1rem;">Contattateci per un preventivo personalizzato</p>
-                        <div class="tier-cta">
-                            <a href="contatti.html" class="cta-button">Richiedete Informazioni</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 1.5rem;">
-                <a href="servizi.html" class="secondary-button">Esplorate tutte le opzioni</a>
-            </div>
-        </section>
-        
         <section class="target">
             <h2>PER CHI SONO PENSATI I NOSTRI SERVIZI</h2>
             <p>I nostri servizi sono particolarmente utili per:</p>
@@ -128,12 +155,36 @@
             </ul>
         </section>
         
+        <section class="service-tiers" style="margin-bottom: 3rem;">
+            <h2>INIZIATE CON UN PACCHETTO BASE</h2>
+            <div class="tier-container" style="justify-content: center;">
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3>Dashboard di Monitoraggio</h3>
+                    </div>
+                    <div class="tier-body">
+                        <ul>
+                            <li>Configurazione personalizzata della dashboard</li>
+                            <li>Supporto all'aggiornamento periodico dei dati</li>
+                            <li>Guida all'interpretazione dei risultati</li>
+                            <li>Consulenza remota per ottimizzare l'utilizzo</li>
+                        </ul>
+                        <p style="text-align: center; font-weight: 600; margin-top: 1rem;">Contattaci per un preventivo personalizzato</p>
+                        <div class="tier-cta">
+                            <a href="contatti.html" class="cta-button">Richiedi Informazioni</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="servizi.html" class="secondary-button">Esplora tutte le opzioni</a>
+            </div>
+        </section>
+        
         <section class="cta-section">
-            <h2>FACCIAMO UN PASSO ALLA VOLTA</h2>
-            <p>Ogni miglioramento nella supply chain parte da una conversazione sincera sulle reali esigenze e possibilità. Parliamo del vostro business e vediamo come possiamo aiutarvi concretamente.</p>
             <div class="cta-buttons">
-                <a href="contatti.html" class="cta-button">Contattateci</a>
-                <a href="servizi.html" class="secondary-button">Scoprite i Servizi</a>
+                <a href="contatti.html" class="cta-button">Contattaci</a>
+                <a href="servizi.html" class="secondary-button">Scopri i Servizi</a>
             </div>
         </section>
     </main>
