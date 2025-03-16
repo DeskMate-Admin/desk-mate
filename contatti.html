@@ -3,19 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti | Desk-mate.it | Analisi della Supply Chain</title>
-    <meta name="description" content="Richiedi una chiamata conoscitiva o contattaci per maggiori informazioni sui nostri servizi di analisi della supply chain.">
+    <title>Contatti | Desk-Mate | Analisi della Supply Chain</title>
+    <meta name="description" content="Contattaci per scoprire come possiamo aiutarti a ottimizzare la tua supply chain o per richiedere maggiori informazioni sui nostri servizi.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="theme-color" content="#191f61">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stili per la sezione contatti rivista */
+        .contact-method-section {
+            margin-bottom: 3rem;
+        }
+
+        .contact-main {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-intro {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .contact-options {
+            margin-bottom: 2rem;
+        }
+
+        .contact-options li {
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .contact-cta {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .response-note {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: var(--secondary);
+        }
+
+        .cta-button {
+            padding: 0.9rem 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* FAQ mini section */
+        .faq-mini-section {
+            margin-bottom: 3rem;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+        }
+
+        .faq-mini-container {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-link {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .faq-link a {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Process section adjustments */
+        .initial-process-section {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .process-steps {
+            margin-top: 1.5rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .contact-main {
+                padding: 1.5rem;
+            }
+            
+            .contact-intro {
+                font-size: 1rem;
+            }
+            
+            .cta-button {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="assets/desk-mate-logo.PNG" alt="Desk-mate.it Logo" class="logo">
+            <img src="assets/desk-mate-logo.PNG" alt="Desk-Mate Logo" class="logo">
         </div>
         <nav>
             <ul class="nav-menu">
@@ -35,32 +133,26 @@
         </section>
 
         <section class="contact-method-section">
-            <h2>COME POSSIAMO AIUTARTI?</h2>
+            <h2>PARLIAMO DELLA TUA SUPPLY CHAIN</h2>
             
-            <div class="contact-methods">
-                <div class="contact-method-card">
-                    <h3>Richiedi una Chiamata Conoscitiva</h3>
-                    <p>Prenota una breve chiamata (30 minuti) per discutere le sfide della tua supply chain e scoprire come i nostri servizi possono rispondere alle tue esigenze specifiche.</p>
-                    <p>Durante questa chiamata:</p>
-                    <ul>
-                        <li>Comprenderemo le specificità della tua azienda</li>
-                        <li>Identificheremo le principali sfide della tua supply chain</li>
-                        <li>Esploreremo possibili soluzioni adatte al tuo caso</li>
-                    </ul>
-                    <a href="mailto:admin@desk-mate.it?subject=Richiesta%20Chiamata%20Conoscitiva" class="cta-button">Richiedi Chiamata</a>
-                </div>
+            <div class="contact-main">
+                <p class="contact-intro">Siamo qui per aiutarti a ottimizzare le operazioni della tua supply chain. Contattaci per:</p>
                 
-                <div class="contact-method-card">
-                    <h3>Informazioni sui Servizi</h3>
-                    <p>Desideri informazioni dettagliate su un servizio specifico o un preventivo personalizzato? Contattaci direttamente specificando le tue esigenze.</p>
-                    <p>Ti risponderemo entro 24 ore lavorative con informazioni pertinenti e, se richiesto, con una proposta su misura per la tua azienda.</p>
-                    <a href="mailto:admin@desk-mate.it?subject=Richiesta%20Informazioni%20Servizi" class="cta-button">Richiedi Informazioni</a>
+                <ul class="contact-options">
+                    <li><strong>Una chiamata conoscitiva</strong> - Discutiamo in 30 minuti le sfide specifiche della tua azienda e come possiamo aiutarti</li>
+                    <li><strong>Informazioni sui servizi</strong> - Ricevi dettagli sui nostri pacchetti e soluzioni personalizzate</li>
+                    <li><strong>Un preventivo personalizzato</strong> - Basato sulle esigenze specifiche della tua azienda</li>
+                </ul>
+                
+                <div class="contact-cta">
+                    <a href="mailto:admin@desk-mate.it" class="cta-button">Contattaci ora</a>
+                    <p class="response-note">Ti risponderemo entro 24 ore lavorative.</p>
                 </div>
             </div>
         </section>
         
         <section class="contact-section">
-            <h2>CONTATTI DIRETTI</h2>
+            <h2>I NOSTRI CONTATTI</h2>
             <div class="contact-details">
                 <div class="contact-detail">
                     <span class="contact-icon">📧</span>
