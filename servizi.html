@@ -10,7 +10,73 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <meta name="theme-color" content="#191f61">
-       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stile per l'header fisso - mantenuto come in index.html */
+        header {
+            background-color: var(--white);
+            padding: 0.75rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: flex-start;
+            width: auto;
+            margin: 0;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+
+        /* Adattamento navigazione */
+        .nav-menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Stili specifici per la pagina servizi */
+        .important-note {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--primary);
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .service-description {
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 0.5rem 1rem;
+            }
+            
+            .logo-container {
+                justify-content: center;
+                margin-bottom: 0.5rem;
+            }
+            
+            .nav-menu {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,31 +97,39 @@
     <main>
         <section class="page-header">
             <h1>I NOSTRI SERVIZI</h1>
-            <p>Soluzioni di analisi della supply chain su misura per le piccole e medie imprese del Nord Italia</p>
+            <p>Soluzioni concrete e realizzabili per ottimizzare la tua supply chain</p>
+        </section>
+
+        <section class="service-description">
+            <p>Offriamo strumenti analitici e supporto concreto per aiutare le piccole e medie imprese a gestire meglio le loro operazioni commerciali internazionali. I nostri servizi sono progettati per essere:</p>
+            <ul>
+                <li><strong>Pratici</strong> - forniamo soluzioni applicabili da subito ai tuoi processi</li>
+                <li><strong>Accessibili</strong> - non servono competenze tecniche avanzate per utilizzare i nostri strumenti</li>
+                <li><strong>Graduali</strong> - inizia con ciò che ti serve ora ed espandi quando necessario</li>
+            </ul>
         </section>
 
         <section class="service-tiers">
-            <h2>Pacchetti Premium con Abbonamento Mensile</h2>
-            <p>Offriamo tre pacchetti di servizi con abbonamento mensile, progettati per supportare in modo continuativo la tua azienda nell'ottimizzazione della supply chain:</p>
+            <h2>Pacchetti con Abbonamento Mensile</h2>
             
             <div class="tier-container">
                 <div class="tier-card">
                     <div class="tier-header">
-                        <h3>Supply Chain Monitor</h3>
-                        <p class="price">€700/mese</p>
+                        <h3>Dashboard Supply Chain Base</h3>
+                        <p class="price">€500-600/mese</p>
                     </div>
                     <div class="tier-body">
-                        <p>La soluzione ideale per ottenere visibilità continua sulle operazioni di supply chain con supporto professionale continuativo.</p>
+                        <p>Monitora efficacemente le tue operazioni di import OPPURE export con una dashboard personalizzata e supporto continuativo.</p>
                         <h4>Include:</h4>
                         <ul>
-                            <li>Setup iniziale dashboard personalizzata (Export / Import)</li>
-                            <li>Aggiornamento mensile dei dati e manutenzione dashboard</li>
-                            <li>Revisione mensile dei KPI con report di analisi e raccomandazioni</li>
-                            <li>4 ore mensili di supporto consulenziale da remoto</li>
-                            <li>Ottimizzazione continua delle visualizzazioni in base al feedback</li>
+                            <li>Dashboard focalizzata su un singolo ambito (import OPPURE export)</li>
+                            <li>5-7 KPI chiave predefiniti</li>
+                            <li>Aggiornamento mensile dei dati</li>
+                            <li>Revisione bimestrale con breve report (max 1 ora)</li>
+                            <li>2 ore mensili di supporto remoto</li>
                         </ul>
-                        <p class="setup-fee">Setup iniziale: €2.000 (una tantum)</p>
-                        <p class="setup-fee">Impegno minimo: 6 mesi</p>
+                        <p class="setup-fee">Setup iniziale: €1.500 (una tantum)</p>
+                        <p class="setup-fee">Impegno minimo: 3 mesi</p>
                         <div class="tier-cta">
                             <a href="contatti.html" class="cta-button">Richiedi Informazioni</a>
                         </div>
@@ -64,44 +138,22 @@
 
                 <div class="tier-card">
                     <div class="tier-header">
-                        <h3>Process Optimization</h3>
-                        <p class="price">€900/mese</p>
+                        <h3>Dashboard Supply Chain Plus</h3>
+                        <p class="price">€900-1.200/mese</p>
                     </div>
                     <div class="tier-body">
-                        <p>Un servizio completo per le aziende che desiderano non solo monitorare ma anche ottimizzare attivamente i processi critici della supply chain.</p>
+                        <p>Soluzione completa che integra sia l'analisi dell'import che dell'export, con supporto all'ottimizzazione di un processo specifico.</p>
                         <h4>Include:</h4>
                         <ul>
-                            <li>Mappatura iniziale dei processi critici</li>
-                            <li>Produzione e monitoraggio dei KPI di processo</li>
-                            <li>Sessione mensile di analisi performance e ottimizzazione (4 ore)</li>
-                            <li>Supporto all'implementazione di miglioramenti incrementali</li>
+                            <li>Dashboard che integra aspetti sia di import CHE export</li>
+                            <li>10-12 KPI predefiniti</li>
+                            <li>Aggiornamento mensile dei dati</li>
+                            <li>Incontro mensile di analisi (max 2 ore)</li>
+                            <li>Supporto all'ottimizzazione di UN processo specifico alla volta</li>
+                            <li>4 ore mensili di supporto remoto</li>
                         </ul>
                         <p class="setup-fee">Setup iniziale: €2.500 (una tantum)</p>
                         <p class="setup-fee">Impegno minimo: 6 mesi</p>
-                        <div class="tier-cta">
-                            <a href="contatti.html" class="cta-button">Richiedi Informazioni</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tier-card">
-                    <div class="tier-header">
-                        <h3>Supply Chain Partner</h3>
-                        <p class="price">€2.000/mese</p>
-                    </div>
-                    <div class="tier-body">
-                        <p>La nostra offerta più completa, con supporto intensivo e continuativo per trasformare la vostra supply chain in un vantaggio competitivo strategico.</p>
-                        <h4>Include:</h4>
-                        <ul>
-                            <li>Servizio di Business Intelligence</li>
-                            <li>Project management continuativo delle iniziative di miglioramento</li>
-                            <li>Supporto settimanale da remoto (16 ore/mese)</li>
-                            <li>Review mensile con executive team</li>
-                            <li>Ottimizzazione continua di processi, dashboard e documentazione</li>
-                            <li>Accesso prioritario per richieste urgenti</li>
-                        </ul>
-                        <p class="setup-fee">Setup iniziale: €5.500 (una tantum)</p>
-                        <p class="setup-fee">Impegno minimo: 12 mesi</p>
                         <div class="tier-cta">
                             <a href="contatti.html" class="cta-button">Richiedi Informazioni</a>
                         </div>
@@ -114,126 +166,149 @@
             <h2>SERVIZI UNA TANTUM</h2>
             
             <div class="module">
-                <h3>Analisi dei Dati</h3>
+                <h3>Analytics Supply Chain</h3>
                 <div class="module-content">
                     <div class="component-cards">
                         <div class="component-card">
-                            <h4>Assessment Business Intelligence</h4>
+                            <h4>Analisi Dati Base</h4>
                             <ul>
-                                <li>Analisi delle fonti dati esistenti</li>
-                                <li>Mappatura esigenze informative</li>
-                                <li>Report di raccomandazioni</li>
+                                <li>Valutazione delle fonti dati esistenti</li>
+                                <li>Identificazione dei KPI più rilevanti</li>
+                                <li>Report con raccomandazioni concrete</li>
                             </ul>
+                            <p class="price-tag">Da €600</p>
                         </div>
                         
                         <div class="component-card">
-                            <h4>Dashboard personalizzata</h4>
+                            <h4>Dashboard Personalizzata</h4>
                             <ul>
-                                <li>Sviluppo dashboard su specifica</li>
-                                <li>Formazione base all'utilizzo (2 ore)</li>
-                                <li>Documentazione utente</li>
+                                <li>Sviluppo di una dashboard Power BI</li>
+                                <li>Formazione all'utilizzo (2 ore)</li>
+                                <li>Documentazione base per l'utente</li>
                             </ul>
+                            <p class="price-tag">Da €1.200</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="module">
-                <h3>Ottimizzazione dei Documenti</h3>
+                <h3>Ottimizzazione Documentale</h3>
                 <div class="module-content">
                     <div class="component-cards">
                         <div class="component-card">
-                            <h4>Audit documentale</h4>
+                            <h4>Revisione Documentazione</h4>
                             <ul>
-                                <li>Revisione completa documentazione esistente</li>
-                                <li>Valutazione conformità normativa</li>
-                                <li>Report con raccomandazioni</li>
+                                <li>Analisi dei documenti attuali</li>
+                                <li>Valutazione della conformità normativa</li>
+                                <li>Report con suggerimenti pratici</li>
                             </ul>
+                            <p class="price-tag">Da €500</p>
                         </div>
                         
                         <div class="component-card">
-                            <h4>Kit documentale Export o Import</h4>
+                            <h4>Kit Documentale</h4>
                             <ul>
-                                <li>Pacchetto completo di template standard</li>
-                                <li>Guida all'utilizzo</li>
-                                <li>Personalizzazione base per esigenze specifiche</li>
+                                <li>Set di template standard (import o export)</li>
+                                <li>Guida all'implementazione</li>
+                                <li>Personalizzazione base per la tua azienda</li>
                             </ul>
+                            <p class="price-tag">Da €800</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="module">
-                <h3>Analisi e Ottimizzazione dei Processi</h3>
+                <h3>Analisi e Ottimizzazione Processi</h3>
                 <div class="module-content">
                     <div class="component-cards">
                         <div class="component-card">
-                            <h4>Mappatura processo singolo</h4>
+                            <h4>Mappatura Processo</h4>
                             <ul>
-                                <li>Documentazione dettagliata flusso attuale</li>
-                                <li>Identificazione criticità e punti di miglioramento</li>
-                                <li>Workshop di presentazione risultati</li>
+                                <li>Documentazione del flusso attuale</li>
+                                <li>Identificazione delle inefficienze</li>
+                                <li>Presentazione dei risultati (1 ora)</li>
                             </ul>
+                            <p class="price-tag">Da €700</p>
                         </div>
                         
                         <div class="component-card">
-                            <h4>Ridisegno processo to-be</h4>
+                            <h4>Ottimizzazione Processo</h4>
                             <ul>
                                 <li>Riprogettazione del flusso ottimizzato</li>
-                                <li>Documentazione procedura standard (SOP)</li>
-                                <li>Piano di implementazione</li>
+                                <li>Procedura operativa standard</li>
+                                <li>Piano di implementazione semplice</li>
                             </ul>
+                            <p class="price-tag">Da €900</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="module">
-                <h3>Supporto al Project Management</h3>
+                <h3>Project Management Supply Chain</h3>
                 <div class="module-content">
                     <div class="component-cards">
                         <div class="component-card">
-                            <h4>Project charter e pianificazione</h4>
+                            <h4>Impostazione Progetto</h4>
                             <ul>
-                                <li>Definizione obiettivi e scope</li>
-                                <li>Sviluppo WBS e cronoprogramma</li>
-                                <li>Identificazione rischi e piano di mitigazione</li>
+                                <li>Definizione degli obiettivi e dell'ambito</li>
+                                <li>Piano di progetto con tempistiche</li>
+                                <li>Identificazione rischi principali</li>
                             </ul>
+                            <p class="price-tag">Da €800</p>
                         </div>
                         
                         <div class="component-card">
-                            <h4>Piano di implementazione</h4>
+                            <h4>Gestione Progetto</h4>
                             <ul>
-                                <li>Strategia di transizione dettagliata</li>
-                                <li>Piano di change management</li>
-                                <li>Framework per monitoraggio avanzamento</li>
+                                <li>Framework di monitoraggio avanzamento</li>
+                                <li>Supporto alla gestione del cambiamento</li>
+                                <li>Riunioni di verifica periodiche</li>
                             </ul>
+                            <p class="price-tag">Quotazione su misura</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="module">
-                <h3>Opzioni Aggiuntive</h3>
+                <h3>Consulenza a Ore</h3>
                 <div class="module-content">
                     <div class="component-cards">
                         <div class="component-card">
-                            <h4>Supporto Puntuale</h4>
+                            <h4>Pacchetto 5 ore</h4>
                             <ul>
-                                <li>Blocco 10 ore consulenza</li>
-                                <li>Utilizzabile entro 3 mesi</li>
-                                <li>Supporto da remoto su richiesta</li>
-                                <li>Rendicontazione dettagliata attività</li>
+                                <li>Supporto remoto quando serve</li>
+                                <li>Utilizzabile entro 6 mesi</li>
+                                <li>Rendicontazione delle attività svolte</li>
                             </ul>
+                            <p class="price-tag">€500</p>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>Pacchetto 10 ore</h4>
+                            <ul>
+                                <li>Supporto remoto quando serve</li>
+                                <li>Utilizzabile entro 6 mesi</li>
+                                <li>Rendicontazione delle attività svolte</li>
+                            </ul>
+                            <p class="price-tag">€900</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
+        <section class="important-note">
+            <h3>Approccio su misura</h3>
+            <p>Ogni servizio è adattato alle specifiche esigenze della tua azienda. I prezzi indicati sono orientativi e possono variare in base alla complessità e all'ampiezza del progetto. Contattaci per una valutazione personalizzata.</p>
+        </section>
+        
         <section class="cta-section">
             <h2>PRONTI A INIZIARE?</h2>
-            <p>Contattaci oggi per una valutazione gratuita della tua supply chain e scopri come i nostri servizi possono aiutare la tua azienda a ottimizzare le operazioni commerciali internazionali.</p>
+            <p>Contattaci oggi per una valutazione gratuita della tua supply chain e scopri come possiamo aiutarti a ottimizzare le operazioni commerciali internazionali della tua azienda.</p>
             <div class="cta-buttons">
                 <a href="contatti.html" class="cta-button">Richiedi Valutazione Gratuita</a>
                 <a href="chi-siamo.html" class="secondary-button">Scopri di Più</a>
@@ -266,71 +341,72 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Desk-Mate | Analisi della Supply Chain Globale</p>
+            <p>&copy; 2025 Desk-Mate | Analisi della Supply Chain</p>
             <p><a href="#" id="open-cookie-settings">Impostazioni Cookie</a></p>
         </div>
     </footer>
-   <!-- Cookie Consent Banner -->
-<div id="cookie-banner" class="cookie-banner">
-    <div class="cookie-content">
-        <div class="cookie-text">
-            <h3>Utilizziamo i cookie</h3>
-            <p>Questo sito utilizza cookie tecnici necessari al funzionamento e cookie analitici e funzionali per migliorare la tua esperienza. Puoi accettare tutti i cookie, solo quelli necessari o personalizzare le tue preferenze.</p>
-            <p>Per maggiori informazioni, consulta la nostra <a href="cookie.html">Cookie Policy</a>.</p>
-        </div>
-        <div class="cookie-buttons">
-            <button id="accept-all-cookies" class="cookie-btn cookie-btn-accept-all">Accetta tutti</button>
-            <button id="accept-necessary-cookies" class="cookie-btn cookie-btn-accept-necessary">Solo necessari</button>
-            <button id="open-modal-settings" class="cookie-btn cookie-btn-settings">Personalizza</button>
+    
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>Utilizziamo i cookie</h3>
+                <p>Questo sito utilizza cookie tecnici necessari al funzionamento e cookie analitici e funzionali per migliorare la tua esperienza. Puoi accettare tutti i cookie, solo quelli necessari o personalizzare le tue preferenze.</p>
+                <p>Per maggiori informazioni, consulta la nostra <a href="cookie.html">Cookie Policy</a>.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="accept-all-cookies" class="cookie-btn cookie-btn-accept-all">Accetta tutti</button>
+                <button id="accept-necessary-cookies" class="cookie-btn cookie-btn-accept-necessary">Solo necessari</button>
+                <button id="open-modal-settings" class="cookie-btn cookie-btn-settings">Personalizza</button>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Cookie Settings Modal -->
-<div id="cookie-modal" class="cookie-modal">
-    <div class="cookie-modal-content">
-        <button id="close-cookie-modal" class="cookie-modal-close">&times;</button>
-        <h2>Impostazioni Cookie</h2>
-        <p>Personalizza le tue preferenze sui cookie. I cookie necessari non possono essere disabilitati in quanto essenziali per il funzionamento del sito.</p>
-        
-        <div class="cookie-setting">
-            <div class="cookie-setting-header">
-                <span class="cookie-setting-title">Cookie Necessari</span>
-                <label class="cookie-toggle">
-                    <input type="checkbox" id="necessary-cookies" checked disabled>
-                    <span class="cookie-slider"></span>
-                </label>
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-modal" class="cookie-modal">
+        <div class="cookie-modal-content">
+            <button id="close-cookie-modal" class="cookie-modal-close">&times;</button>
+            <h2>Impostazioni Cookie</h2>
+            <p>Personalizza le tue preferenze sui cookie. I cookie necessari non possono essere disabilitati in quanto essenziali per il funzionamento del sito.</p>
+            
+            <div class="cookie-setting">
+                <div class="cookie-setting-header">
+                    <span class="cookie-setting-title">Cookie Necessari</span>
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="necessary-cookies" checked disabled>
+                        <span class="cookie-slider"></span>
+                    </label>
+                </div>
+                <p class="cookie-setting-description">Questi cookie sono essenziali per il funzionamento del sito web e non possono essere disattivati.</p>
             </div>
-            <p class="cookie-setting-description">Questi cookie sono essenziali per il funzionamento del sito web e non possono essere disattivati.</p>
-        </div>
-        
-        <div class="cookie-setting">
-            <div class="cookie-setting-header">
-                <span class="cookie-setting-title">Cookie Analitici</span>
-                <label class="cookie-toggle">
-                    <input type="checkbox" id="analytics-cookies">
-                    <span class="cookie-slider"></span>
-                </label>
+            
+            <div class="cookie-setting">
+                <div class="cookie-setting-header">
+                    <span class="cookie-setting-title">Cookie Analitici</span>
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="analytics-cookies">
+                        <span class="cookie-slider"></span>
+                    </label>
+                </div>
+                <p class="cookie-setting-description">Questi cookie ci permettono di contare le visite e le fonti di traffico per poter misurare e migliorare le prestazioni del nostro sito.</p>
             </div>
-            <p class="cookie-setting-description">Questi cookie ci permettono di contare le visite e le fonti di traffico per poter misurare e migliorare le prestazioni del nostro sito.</p>
-        </div>
-        
-        <div class="cookie-setting">
-            <div class="cookie-setting-header">
-                <span class="cookie-setting-title">Cookie Funzionali</span>
-                <label class="cookie-toggle">
-                    <input type="checkbox" id="functional-cookies">
-                    <span class="cookie-slider"></span>
-                </label>
+            
+            <div class="cookie-setting">
+                <div class="cookie-setting-header">
+                    <span class="cookie-setting-title">Cookie Funzionali</span>
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="functional-cookies">
+                        <span class="cookie-slider"></span>
+                    </label>
+                </div>
+                <p class="cookie-setting-description">Questi cookie consentono al sito di fornire funzionalità e personalizzazione avanzate.</p>
             </div>
-            <p class="cookie-setting-description">Questi cookie consentono al sito di fornire funzionalità e personalizzazione avanzate.</p>
-        </div>
-        
-        <div class="cookie-modal-buttons">
-            <button id="save-cookie-settings" class="cookie-btn cookie-btn-accept-all">Salva preferenze</button>
+            
+            <div class="cookie-modal-buttons">
+                <button id="save-cookie-settings" class="cookie-btn cookie-btn-accept-all">Salva preferenze</button>
+            </div>
         </div>
     </div>
-</div>
     <script src="js/cookie-consent.js"></script>
 </body>
 </html>
